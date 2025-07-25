@@ -132,7 +132,7 @@ function check_collisions(){
                 if (demon_life <= 0){
                     await new Promise(r => setTimeout(r, 1000));
                     deer_speed = 0
-                    window.location= "/?won=true"
+                    window.location= "/aftermath-summer-of-making-bossfightdemo/?won=true"
                 }
                 document.getElementById("life").innerHTML = demon_life
                 finished = true
@@ -180,7 +180,7 @@ async function fight(){
                 
                 await new Promise(r => setTimeout(r, 1000));
                 
-                window.location = "/?died=true"
+                window.location = "/aftermath-summer-of-making-bossfightdemo/?died=true"
             }
             if (performance.now() - last_pentagram > time_between_attacks){
                 last_pentagram = performance.now()
