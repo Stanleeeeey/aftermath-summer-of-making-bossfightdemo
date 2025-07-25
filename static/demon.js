@@ -36,6 +36,7 @@ window.addEventListener("load", () => {
         document.getElementById("info").innerHTML = "You've been hit, you're exhausted, yet part of you keeps you fighting!"}
         else if(key === "won" && Boolean(value) === true){
             document.getElementById("info").innerHTML = "You've defeated demon!"
+            document.getElementById("continue").innerHTML = "press enter to play epilogue"
             won = true;
         }
     }
@@ -154,9 +155,9 @@ async function fight(){
 
     var image=new Image();
     var pentagram_img=new Image();
-    pentagram_img.src = "/static/pentagram.png"
+    pentagram_img.src = "/aftermath-summer-of-making-bossfightdemo/static/pentagram.png"
     pentagram_img.onload = await async function(){}
-    image.src="/static/enemy.png";
+    image.src="/aftermath-summer-of-making-bossfightdemo/static/enemy.png";
     image.onload= await async function(){
 
 
